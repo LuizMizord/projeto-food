@@ -45,7 +45,13 @@
     }
 }
 
-@media (max-width: 720px) {
+@media (max-width: 768px) {
+
+    :root {
+        --h1-font:2.5rem;
+        --h2-font:2.3rem;
+    }
+
     header {
         padding: 10px 16px;
     }
@@ -53,6 +59,16 @@
         grid-template-columns: 1fr;
         text-align: center;
     }
+
+    .home-text h1 {
+        font-size: var(--h1-font);
+    }
+
+    .home-text h2 {
+        font-size: var(--h2-font);
+    }
+
+
     .sobre {
         grid-template-columns: 1fr;
         text-align: center;
